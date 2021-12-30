@@ -7,11 +7,11 @@
 
     **예시**
     GOOD
-    ```
-    ```.nav_wrap
+    ```scss
+    .nav_wrap
     ```
     BAD
-    ```
+    ```scss
     .nav-wrap
     ```
 
@@ -20,11 +20,11 @@
 
     **예시**
     GOOD
-    ```
+    ```scss
     #UserName
     ```
     BAD
-    ```
+    ```scss
     #user_name
     ```
 
@@ -35,11 +35,11 @@
 **예시**
 
 GOOD
-```
+```scss
 ```.login_button { color: red; }
 ```
 BAD
-```
+```scss
 .login button { color: red; }
 ```
      
@@ -50,15 +50,15 @@ BAD
 **예시**
 
 템플릿
-```
+```scss
 nav.navigation-wrap.sticky { background-color: black; }
 ```
 
 GOOD
-```
+```scss
 nav.navigation-wrap.sticky { background-color: red; } (선택자가 똑같음)
 ```
 BAD
-```
+```scss
 .sticky { background-color: red !important; } (임폴턴트 사용)
 ```
