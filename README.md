@@ -44,12 +44,12 @@
 ```
 <br>
 
-### 3. 템플릿 오버라이팅
+### 3. 오버라이팅 (Template Overwriting)
 
-템플릿과 똑같은 선택자를 주어 오버라이팅
+템플릿 혹은 플러그인이 작성한 **똑같은 선택자**를 주어 오버라이팅
 
 ```scss
-//템플릿
+//다른작성자
 nav.navigation-wrap.sticky { background-color: black; }
 
 //GOOD
