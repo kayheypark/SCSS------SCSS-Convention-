@@ -58,3 +58,4 @@
     ```
     .sticky { background-color: red !important; } (임폴턴트 사용)
     ```
+    
