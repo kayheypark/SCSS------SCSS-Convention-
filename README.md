@@ -4,27 +4,27 @@
 
 + #### 클래스(Class)
 
-   ㅇ **스네이크 표기법(Snake Case)**으로 소문자와 언더스코어(_)로 작성
+**스네이크 표기법(Snake Case)**으로 소문자와 언더스코어(_)로 작성
     
-    ```scss
-    //GOOD
-    .nav_wrap
+```scss
+//GOOD
+.nav_wrap
 
-    //BAD
-    .nav-wrap
-    ```
+//BAD
+.nav-wrap
+```
 
 + #### 아이디(Id)
 
-    **파스칼 표기법(Pascal Case)**으로 대문자와 소문자로 작성
+**파스칼 표기법(Pascal Case)**으로 대문자와 소문자로 작성
     
-    ```scss
-    //GOOD
-    #UserName
+```scss
+//GOOD
+#UserName
 
-    //BAD
-    #user_name
-    ```
+//BAD
+#user_name
+```
 
 ### 2. 재활용(Recycle)
 
