@@ -44,12 +44,12 @@
 ```
 <br>
 
-### 3. 오버라이팅 (Template Overwriting)
+### 3. 다른 작성자 오버라이팅 (Vendor Overwriting)
 
-템플릿 혹은 플러그인이 작성한 **똑같은 선택자**를 주어 오버라이팅
+템플릿 혹은 플러그인 등 다른 사람에 의하여 작성된 **똑같은 선택자**를 주어 오버라이팅
 
 ```scss
-//다른작성자
+//Vendor
 nav.navigation-wrap.sticky { background-color: black; }
 
 //GOOD
