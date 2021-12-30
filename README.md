@@ -28,7 +28,6 @@
 
 ### 2. 재활용(Recycle)
 
-
 스타일을 적용받는 노드를 **저격**하여 스타일을 작성함
 
 ```scss
@@ -38,21 +37,18 @@
 //BAD
 .login button { color: red; }
 ```
-     
+
 ### 3. 템플릿 오버라이팅
 
 템플릿과 똑같은 선택자를 주어 오버라이팅
 
-템플릿
 ```scss
+//템플릿
 nav.navigation-wrap.sticky { background-color: black; }
-```
 
-GOOD
-```scss
-nav.navigation-wrap.sticky { background-color: red; } (선택자가 똑같음)
-```
-BAD
-```scss
-.sticky { background-color: red !important; } (임폴턴트 사용)
+//GOOD
+nav.navigation-wrap.sticky { background-color: red; } //선택자가 똑같음
+
+//BAD
+.sticky { background-color: red !important; } //임폴턴트 사용
 ```
