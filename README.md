@@ -13,6 +13,7 @@
     //BAD
     .nav-wrap
     ```
+    <br>
 
 + #### 아이디(Id)
 
@@ -25,6 +26,7 @@
     //BAD
     #user_name
     ```
+    <br>
 
 ### 2. 재활용(Recycle)
 
@@ -37,6 +39,7 @@
 //BAD
 .login button { color: red; }
 ```
+<br>
 
 ### 3. 템플릿 오버라이팅
 
@@ -52,3 +55,4 @@ nav.navigation-wrap.sticky { background-color: red; } //선택자가 똑같음
 //BAD
 .sticky { background-color: red !important; } //임폴턴트 사용
 ```
+<br>
