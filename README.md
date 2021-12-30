@@ -28,17 +28,16 @@
 
 ### 2. 재활용(Recycle)
 
-+ #### 아이디(Id)
 
-    스타일을 적용받는 노드를 **저격**하여 스타일을 작성함
-    
-    ```scss
-    //GOOD
-    .login_button { color: red; }
+스타일을 적용받는 노드를 **저격**하여 스타일을 작성함
 
-    //BAD
-    .login button { color: red; }
-    ```
+```scss
+//GOOD
+.login_button { color: red; }
+
+//BAD
+.login button { color: red; }
+```
      
 ### 3. 템플릿 오버라이팅
 
