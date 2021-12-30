@@ -1,0 +1,25 @@
+﻿/*--------------------------------------------------
+
+                            플레이스홀더
+
+--------------------------------------------------*/
+
+%screen_out {
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+%container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    @include rwd(tablet) {
+        max-width: unset;
+    }
+    @include rwd(mobile) {
+    }
+}

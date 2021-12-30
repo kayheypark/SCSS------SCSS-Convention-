@@ -1,0 +1,20 @@
+﻿/*--------------------------------------------------
+
+                            헬퍼
+
+--------------------------------------------------*/
+
+.screen_out {
+    @extend %screen_out;
+}
+
+.d_none_mob {
+    @include rwd(mobile) {
+        display: none !important;
+    }
+}
+.d_none_tab {
+    @include rwd(tablet) {
+        display: none !important;
+    }
+}

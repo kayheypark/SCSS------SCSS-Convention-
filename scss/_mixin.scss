@@ -1,0 +1,26 @@
+﻿/*--------------------------------------------------
+
+                            믹스인
+
+--------------------------------------------------*/
+
+//반응형
+//@mixin rwd( mobile | tablet | pc ) { 내용 }
+@mixin rwd($break_point) {
+    @if ( $break_point == tablet ) {
+        @media only screen and ( max-width: #{$break_point_tablet} ) {
+            @content;
+        }
+    }
+    @if ( $break_point == mobile ) {
+        @media only screen and ( max-width: #{$break_point_mobile} ) {
+            @content;
+        }
+    }
+    //※PC브레이크포인트가 위로 깨졌을 때 적용됨
+    @if ( $break_point == pc ) {
+        @media only screen and ( min-width: #{$break_point_pc} ) {
+            @content;
+        }
+    }
+}
