@@ -8,7 +8,7 @@
     예시
     GOOD
     ```
-    .nav_wrap
+    ```.nav_wrap
     ```
     BAD
     ```
@@ -33,6 +33,7 @@
 > 스타일을 적용받는 노드를 저격하여 스타일을 작성함
 
 예시
+
 GOOD
 ```
 .login_button { color: red; }
