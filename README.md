@@ -36,7 +36,7 @@
 
 GOOD
 ```
-.login_button { color: red; }
+```.login_button { color: red; }
 ```
 BAD
 ```
