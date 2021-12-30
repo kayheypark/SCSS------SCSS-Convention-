@@ -51,10 +51,10 @@
 
 ```scss
 //Vendor
-nav.#navigation.sticky { background-color: black; }
+#navigation.sticky { background-color: black; }
 
 //GOOD
-nav.#navigation.sticky { background-color: red; } //선택자가 똑같음
+#navigation.sticky { background-color: red; } //선택자가 똑같음
 
 //BAD
 .sticky { background-color: red !important; } //임폴턴트 사용
