@@ -42,6 +42,7 @@
 //BAD
 .login button { color: red; }
 ```
+> 브라우저는 'Nesting 구조를 해석하는 속도'보다 '클래스명을 직접 찾는 속도'가 더 빠릅니다.
 <br>
 
 ### 3. 다른 작성자 오버라이팅 (Vendor Overwriting)
