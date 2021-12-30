@@ -7,18 +7,26 @@
 
     예시
     GOOD
+    ```
     .nav_wrap
+    ```
     BAD
+    ```
     .nav-wrap
+    ```
 
 + 아이디
     > id명은 '파스칼 표현법'으로 대문자와 소문자로 작성
 
     예시
     GOOD
+    ```
     #UserName
+    ```
     BAD
+    ```
     #user_name
+    ```
 
 ## 2. 재활용
 
@@ -26,9 +34,13 @@
 
 예시
 GOOD
+```
 .login_button { color: red; }
+```
 BAD
+```
 .login button { color: red; }
+```
      
 ## 3. 템플릿 오버라이팅
 
@@ -36,9 +48,16 @@ BAD
 
 예시
 
-템플릿     nav.navigation-wrap.sticky { background-color: black; }
+템플릿
+```
+nav.navigation-wrap.sticky { background-color: black; }
+```
 
 GOOD
+```
 nav.navigation-wrap.sticky { background-color: red; } (선택자가 똑같음)
+```
 BAD
+```
 .sticky { background-color: red !important; } (임폴턴트 사용)
+```
