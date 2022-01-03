@@ -18,3 +18,29 @@
         display: none !important;
     }
 }
+
+.profile_img {
+    @include profile_img(50px, 50px);
+    &.in_card_view {
+        @include profile_img(200px, 200px);
+    }
+}
+
+.p_0 {
+    @extend %p_0;
+}
+.px_0 {
+    @extend %px_0;
+}
+.py_0 {
+    @extend %py_0;
+}
+.m_0 {
+    @extend %m_0;
+}
+.mx_0 {
+    @extend %mx_0;
+}
+.my_0 {
+    @extend %my_0;
+}

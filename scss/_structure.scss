@@ -7,3 +7,44 @@
 .container {
     @extend %container;
 }
+
+.row {
+    @extend %f;
+}
+
+.col {
+    @for $i from 1 through $column_count {
+        &_#{$i} {
+            flex: 0 0 calc(100% * (#{$i} / #{$column_count}));
+        }
+    }
+}
+
+.f {
+    @extend %f;
+}
+.j_s {
+    @extend %f_j_s;
+}
+.j_e {
+    @extend %f_j_e;
+}
+.j_c {
+    @extend %f_j_c;
+}
+.j_sb {
+    @extend %f_j_sb;
+}
+
+.a_s {
+    @extend %f_a_s;
+}
+.a_e {
+    @extend %f_a_e;
+}
+.a_c {
+    @extend %f_a_c;
+}
+.f_c_c {
+    @extend %f_c_c;
+}

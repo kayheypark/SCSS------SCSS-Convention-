@@ -3,3 +3,83 @@
                             섹션
 
 --------------------------------------------------*/
+
+//버튼
+.button {
+
+    @extend %tdn;
+    display: inline-flex;
+    letter-spacing: 1px;
+    border: 1px solid $white;
+    padding: $ratio_small $ratio_smaller;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: $ratio_small;
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        color: $white;
+    }
+
+    &.primary {
+        color: green;
+        border-color: green;
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+//폼컨트롤
+.form_control {
+    background-color: $white;
+    color: $black;
+    padding: $ratio_small $ratio_smaller;
+    border-radius: 8px;
+    border: 0;
+    font-size: $ratio_small;
+}
+
+//폼필드셋
+.form_fieldset {
+    @include flex_column($ratio_bigger);
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+//폼랩
+.form_wrap {
+    @extend %f_a_c;
+    @extend %f_j_sb;
+    column-gap: $ratio_d1;
+    flex: 0 0 100%;
+}
+
+//폼레전드
+.form_legend {
+    font-size: $ratio_bigger;
+    margin-bottom: $ratio_bigger;
+}
+
+//뱃지
+.badge {
+    display: flex;
+    align-items: center;
+    font-size: $ratio_smaller;
+    border: 1px solid $white;
+    padding: 8px $ratio_smaller;
+    margin-left: $ratio_smaller;
+    border-radius: 8px;
+    
+    &.female {
+        border-color: #ff80cd;
+        color: #ff80cd;
+    }
+    &.male {
+        border-color: #80beff;
+        color: #80beff;
+    }
+}

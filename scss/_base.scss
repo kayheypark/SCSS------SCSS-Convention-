@@ -7,3 +7,13 @@
 form {
     width: 100%;
 }
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+ul,ol,dl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
