@@ -479,6 +479,116 @@ ul, ol, dl {
 
 /*--------------------------------------------------
 
+                            타이포그래피
+
+--------------------------------------------------*/
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url(../font/NotoSansKR/NotoSansKR-Thin.otf);
+  font-weight: 100;
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url(../font/NotoSansKR/NotoSansKR-Light.otf);
+  font-weight: 300;
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url(../font/NotoSansKR/NotoSansKR-Regular.otf);
+  font-weight: 400;
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url(../font/NotoSansKR/NotoSansKR-Medium.otf);
+  font-weight: 500;
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url(../font/NotoSansKR/NotoSansKR-Bold.otf);
+  font-weight: 700;
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url(../font/ShareTechMono/ShareTechMono-Regular.ttf);
+}
+
+html {
+  font-family: 'NotoSansKR', 'Share Tech Mono';
+  font-size: 20px;
+  font-weight: 300;
+  color: #333333;
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 3rem 0;
+  font-size: 3rem;
+}
+
+h3 {
+  margin: 0 0 1.15rem 0;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.15rem;
+}
+
+h5 {
+  margin: 0 0 0.8rem 0;
+  font-size: 1rem;
+}
+
+h6 {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.8rem;
+}
+
+a {
+  color: #FFFFFF;
+  text-underline-position: under;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a.active {
+  color: green;
+}
+
+p {
+  margin-top: 0;
+}
+
+/*--------------------------------------------------
+
                             레이아웃
 
 --------------------------------------------------*/

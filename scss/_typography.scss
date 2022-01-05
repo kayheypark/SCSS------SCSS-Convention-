@@ -1,0 +1,96 @@
+﻿/*--------------------------------------------------
+
+                            타이포그래피
+
+--------------------------------------------------*/
+
+//한글
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Thin.otf);
+    font-weight: 100;
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Light.otf);
+    font-weight: 300;
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Regular.otf);
+    font-weight: 400;
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Medium.otf);
+    font-weight: 500;
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR/NotoSansKR-Bold.otf);
+    font-weight: 700;
+    unicode-range: U+AC00-D7A3;
+}
+
+//나머지 (=영어,숫자,특문)
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url(../font/ShareTechMono/ShareTechMono-Regular.ttf);
+}
+
+html {
+    font-family: 'NotoSansKR', 'Share Tech Mono';
+    font-size: 20px;
+    font-weight: 300;
+    color: $black;
+    @include rwd(tablet) {
+        font-size: 18px;
+    };
+    @include rwd(mobile) {
+        font-size: 14px;
+    };
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0 0 $ratio_d1 0;
+    font-size: $ratio_d1;
+}
+h3 {
+    margin: 0 0 $ratio_big 0;
+    font-size: $ratio_bigger;
+}
+h4 {
+    margin: 0 0 $ratio_regular 0;
+    font-size: $ratio_big;
+}
+h5 {
+    margin: 0 0 $ratio_small 0;
+    font-size: $ratio_regular;
+}
+h6 {
+    margin: 0 0 $ratio_smaller 0;
+    font-size: $ratio_small;
+}
+
+a {
+    color: $white;
+    text-underline-position: under;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+    &.active {
+        color: green;
+    }
+}
+
+p {
+    margin-top: 0;
+}

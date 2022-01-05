@@ -48,3 +48,7 @@
 .f_c_c {
     @extend %f_c_c;
 }
+
+ul,ol,dl {
+    @include flex_column($ratio_smaller);
+}
