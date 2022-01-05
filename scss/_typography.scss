@@ -7,45 +7,45 @@
 //한글
 @font-face {
     font-family: 'NotoSansKR';
-    src: url(../font/NotoSansKR/NotoSansKR-Thin.otf);
+    src: url(./font/NotoSansKR/NotoSansKR-Thin.otf);
     font-weight: 100;
     unicode-range: U+AC00-D7A3;
 }
 @font-face {
     font-family: 'NotoSansKR';
-    src: url(../font/NotoSansKR/NotoSansKR-Light.otf);
-    font-weight: 300;
-    unicode-range: U+AC00-D7A3;
-}
-@font-face {
-    font-family: 'NotoSansKR';
-    src: url(../font/NotoSansKR/NotoSansKR-Regular.otf);
+    src: url(./font/NotoSansKR/NotoSansKR-Regular.otf);
     font-weight: 400;
     unicode-range: U+AC00-D7A3;
 }
+
 @font-face {
     font-family: 'NotoSansKR';
-    src: url(../font/NotoSansKR/NotoSansKR-Medium.otf);
-    font-weight: 500;
-    unicode-range: U+AC00-D7A3;
-}
-@font-face {
-    font-family: 'NotoSansKR';
-    src: url(../font/NotoSansKR/NotoSansKR-Bold.otf);
+    src: url(./font/NotoSansKR/NotoSansKR-Bold.otf);
     font-weight: 700;
     unicode-range: U+AC00-D7A3;
 }
 
 //나머지 (=영어,숫자,특문)
 @font-face {
-    font-family: 'Share Tech Mono';
-    src: url(../font/ShareTechMono/ShareTechMono-Regular.ttf);
+    font-family: 'Raleway';
+    src: url(./font/Raleway/static/Raleway-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(./font/Raleway/static/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(./font/Raleway/static/Raleway-Bold.ttf);
+    font-weight: 700;
 }
 
 html {
-    font-family: 'NotoSansKR', 'Share Tech Mono';
-    font-size: 20px;
-    font-weight: 300;
+    font-family: 'NotoSansKR', 'Raleway';
+    font-size: $root_font_size;
+    font-weight: 400;
     color: $black;
     @include rwd(tablet) {
         font-size: 18px;
@@ -80,14 +80,13 @@ h6 {
 }
 
 a {
-    color: $white;
-    text-underline-position: under;
-
+    @extend %tdn;
+    color: $black;
     &:hover {
-        color: #FFFFFF;
+        color: rgb(1, 138, 1);
     }
     &.active {
-        color: green;
+        color: rgb(1, 138, 1);
     }
 }
 

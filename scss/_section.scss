@@ -83,3 +83,67 @@
         color: #80beff;
     }
 }
+
+//독버전
+.doc_version_wrap {
+    @include px($ratio_regular);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.doc_version_title {
+    margin-bottom: 0;
+    font-size: $ratio_regular;
+    font-weight: 400;
+}
+.doc_version_selsect {
+    font-size: $ratio_smaller;
+}
+
+//메뉴
+.menu_ul {
+    margin-top: $ratio_regular;
+    & & {
+        margin-top: 0;
+    }
+}
+.menu_li {
+    a {
+        @include px($ratio_regular);
+        @include py($ratio_regular);
+        font-size: $ratio_small;
+        display: block;
+        &:hover, &.active {
+            background-color: #f5f5f5;
+            color: $black;
+            font-weight: 700;
+        }
+    }
+}
+.meun_title {
+    @include px($ratio_regular);
+    font-size: $ratio_regular;
+    font-weight: 400;
+    margin-top: $ratio_bigger;
+    margin-bottom: $ratio_big;
+}
+
+//메인
+.main {
+    display: flex;
+    justify-content: center;
+}
+.doc_wrap {
+    flex: 0.5 0 0;
+}
+.main_title {
+    font-weight: 400;
+    margin-bottom: $ratio_regular;
+}
+.main_subtitle {
+    display: block;
+    margin-bottom: $ratio_regular;
+}
+.main_detail {
+    margin-bottom: $ratio_regular;
+}
